@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\Web\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 Route::resource('/articles', ArticleController::class);
-Route::resource('/home', ArticleController::class);
+Route::resource('/web/article/home', ArticleController::class);
 
 
 Auth::routes();
